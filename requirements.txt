@@ -12,4 +12,6 @@ seaborn
 flake8
 black
 mypy
+ensure
+gdown
 -e .

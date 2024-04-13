@@ -1,0 +1,8 @@
+stages:
+  data_ingestion:
+    cmd: python Xray\pipeline\data_ingestion_pipline.py
+    deps:
+      - Xray\pipeline\data_ingestion_pipline.py
+      - config\config.yaml
+    outs: 
+      - artifacts/data_ingestion  
