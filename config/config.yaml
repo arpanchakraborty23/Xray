@@ -1,7 +1,12 @@
-artifats_root:
+artifacts_root: artifacts
 
-data_ingestion: 
-  dir: artifacts/data_ingestion
+data_ingestion:
+  dir: artifacts/data_ingestion 
   source_url: https://drive.google.com/file/d/1pfIAlurfeqFTbirUZ5v_vapIoGPgRiXY/view?usp=sharing
   local_data_file: artifacts/data_ingestion/data.zip
-  unzip_data: aratifacts/data
+  unzip_dir: artifacts/data_ingestion
+
+custom_model:
+  dir: artifacts/custom_model
+  custom_model_path: artifacts/custom_model/model.h5
+  update_custom_model_path: artifacts/custom_model/model_update.h5

@@ -3,7 +3,7 @@ from pathlib import Path
 
 @dataclass
 class DataIngestionConfig:
-    dir:Path
-    source_url:str
-    local_data_file: Path
-    unzip_data:Path
+    dir: Path
+    source_url:Path
+    local_data_file:Path
+    unzip_dir:Path

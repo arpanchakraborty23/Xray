@@ -1,0 +1,19 @@
+schema: '2.0'
+stages:
+  data_ingestion:
+    cmd: python src\pipeline\train_pipline.py
+    deps:
+    - path: config\config.yaml
+      hash: md5
+      md5: 844ad17cf6f4339e05807839a92d52f9
+      size: 273
+    - path: src\pipeline\train_pipline.py
+      hash: md5
+      md5: cdccfd99155ed6793cfa35887bde7ef3
+      size: 882
+    outs:
+    - path: artifacts/data_ingestion
+      hash: md5
+      md5: 11237f5eacb7e1a047aa33ca8b30b551.dir
+      size: 103442976
+      nfiles: 271
