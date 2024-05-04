@@ -3,6 +3,7 @@ import yaml
 import json
 from box import ConfigBox
 from pathlib import Path
+from tensorflow import keras
 from ensure import ensure_annotations
 from src.logging.logger import logging
 from src.exception.exception import CustomException
@@ -31,3 +32,7 @@ def create_dir(path_to_dir: list, verbose=True):
     except Exception as e:
         logging.info('error occured',str(e))
         raise CustomException(sys,e)
+
+@staticmethod
+def save_model(path: Path, model: keras.Model):
+        model.save(path)

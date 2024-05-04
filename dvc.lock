@@ -17,3 +17,32 @@ stages:
       md5: 11237f5eacb7e1a047aa33ca8b30b551.dir
       size: 103442976
       nfiles: 271
+  train_pipline:
+    cmd: python src/pipeline/train_pipline.py
+    deps:
+    - path: config/config.yaml
+      hash: md5
+      md5: 75a67ce88afd543e3ba5ae522b144c09
+      size: 492
+    - path: params.yaml
+      hash: md5
+      md5: bb52d29c5e8591d87a6b2d40d36102fe
+      size: 118
+    - path: src/pipeline/train_pipline.py
+      hash: md5
+      md5: 2bdb46076f16dad96928154f0f87e768
+      size: 1559
+    outs:
+    - path: artifacts/custom_model/model.h5
+      hash: md5
+      md5: 5e2305addb195f45da11226fd0c5881d
+      size: 3003960
+    - path: artifacts/data_ingestion
+      hash: md5
+      md5: 11237f5eacb7e1a047aa33ca8b30b551.dir
+      size: 103442976
+      nfiles: 271
+    - path: artifacts/model_train/model.h5
+      hash: md5
+      md5: 72a6bee178681ba765e5d646c1f625f9
+      size: 3003960

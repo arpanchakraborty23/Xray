@@ -9,4 +9,9 @@ data_ingestion:
 custom_model:
   dir: artifacts/custom_model
   custom_model_path: artifacts/custom_model/model.h5
-  update_custom_model_path: artifacts/custom_model/model_update.h5
+
+model_train:
+  dir: artifcts/model_train
+  model: artifacts/custom_model/model.h5
+  model_path: artifacts/model_train/model.h5
+  

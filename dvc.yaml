@@ -1,8 +1,11 @@
 stages:
-  data_ingestion:
-    cmd: python src\pipeline\train_pipline.py
+  train_pipline:
+    cmd: python src/pipeline/train_pipline.py
     deps:
-      - src\pipeline\train_pipline.py
-      - config\config.yaml
+      - src/pipeline/train_pipline.py
+      - config/config.yaml
+      - params.yaml
     outs: 
-      - artifacts/data_ingestion  
+      - artifacts/data_ingestion 
+      - artifacts/custom_model/model.h5
+      - artifacts/model_train/model.h5
