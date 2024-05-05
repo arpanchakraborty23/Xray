@@ -11,7 +11,7 @@ class PredictionPipline:
     def predict(self):
 
         # load model
-        model=load_model('artifacts/model_train/model.h5')
+        model=load_model(os.path.join('artifacts/model_train/model.h5'))
 
         imagename=self.filename
 

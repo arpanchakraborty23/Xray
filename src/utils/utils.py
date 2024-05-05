@@ -38,8 +38,8 @@ def create_dir(path_to_dir: list, verbose=True):
 def save_model(path: Path, model: keras.Model):
         model.save(path)
 
-def decodeimage(img_str,filename):
-    image_data=base64.b64decode(img_str)
-    with open(filename,'wb') as f:
-        f.write()
+def decodeImage(imgstring, fileName):
+    imgdata = base64.b64decode(imgstring)
+    with open(fileName, 'wb') as f:
+        f.write(imgdata)
         f.close()
