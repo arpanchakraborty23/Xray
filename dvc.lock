@@ -35,7 +35,7 @@ stages:
     outs:
     - path: artifacts/custom_model/model.h5
       hash: md5
-      md5: 5e2305addb195f45da11226fd0c5881d
+      md5: abc6f10fc17ae49e2fd789c6baf874d5
       size: 3003960
     - path: artifacts/data_ingestion
       hash: md5
@@ -44,5 +44,5 @@ stages:
       nfiles: 271
     - path: artifacts/model_train/model.h5
       hash: md5
-      md5: 72a6bee178681ba765e5d646c1f625f9
+      md5: 50ac779a5400f4a0673acfb8177dad8c
       size: 3003960
