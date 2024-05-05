@@ -19,47 +19,26 @@
 
 ## How to run?
 
-```bash
+```
 conda create -n env python=3.8 -y
 ```
 
-```bash
+```
 conda activate ./env
 ```
 
-```bash
+```
 pip install -r requirements.txt
 ```
 
-```bash
+```
 python app.py
 ```
 
-### Mlflow dagshub connection uri
-
-```bash
-MLFLOW_TRACKING_URI=
-MLFLOW_TRACKING_USERNAME=
-MLFLOW_TRACKING_PASSWORD=
-python script.py
-```
-
-
-### RUN from bash terminal
-
-```bash
-export MLFLOW_TRACKING_URI=https://dagshub.com/
-
-export MLFLOW_TRACKING_USERNAME=
-
-export MLFLOW_TRACKING_PASSWORD=
-
-```
 
 
 
 ### DVC cmd
-
-1. dvc init
-2. dvc repro
-3. dvc dag
+```
+ dvc repro
+```
